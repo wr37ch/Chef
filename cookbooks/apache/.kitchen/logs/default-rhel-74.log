@@ -1,0 +1,47 @@
+I, [2018-03-01T08:25:34.332021 #10064]  INFO -- default-rhel-74: -----> Cleaning up any prior instances of <default-rhel-74>
+I, [2018-03-01T08:25:34.332146 #10064]  INFO -- default-rhel-74: -----> Destroying <default-rhel-74>...
+I, [2018-03-01T08:25:34.332756 #10064]  INFO -- default-rhel-74: Finished destroying <default-rhel-74> (0m0.00s).
+I, [2018-03-01T08:25:34.332940 #10064]  INFO -- default-rhel-74: -----> Testing <default-rhel-74>
+I, [2018-03-01T08:25:34.333033 #10064]  INFO -- default-rhel-74: -----> Creating <default-rhel-74>...
+E, [2018-03-01T08:25:34.750963 #10064] ERROR -- default-rhel-74: Create failed on instance <default-rhel-74>.
+E, [2018-03-01T08:25:34.751379 #10064] ERROR -- default-rhel-74: ------Exception-------
+E, [2018-03-01T08:25:34.751406 #10064] ERROR -- default-rhel-74: Class: Aws::EC2::Errors::InvalidAMIIDNotFound
+E, [2018-03-01T08:25:34.751419 #10064] ERROR -- default-rhel-74: Message: The image id '[ami-c90195b0]' does not exist
+E, [2018-03-01T08:25:34.751429 #10064] ERROR -- default-rhel-74: ----------------------
+E, [2018-03-01T08:25:34.751439 #10064] ERROR -- default-rhel-74: ------Backtrace-------
+E, [2018-03-01T08:25:34.751449 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/aws-sdk-core-2.6.3/lib/seahorse/client/plugins/raise_response_errors.rb:15:in `call'
+E, [2018-03-01T08:25:34.751460 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/aws-sdk-core-2.6.3/lib/aws-sdk-core/plugins/param_converter.rb:20:in `call'
+E, [2018-03-01T08:25:34.751470 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/aws-sdk-core-2.6.3/lib/aws-sdk-core/plugins/response_paging.rb:26:in `call'
+E, [2018-03-01T08:25:34.751485 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/aws-sdk-core-2.6.3/lib/seahorse/client/plugins/response_target.rb:21:in `call'
+E, [2018-03-01T08:25:34.751497 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/aws-sdk-core-2.6.3/lib/seahorse/client/request.rb:70:in `send_request'
+E, [2018-03-01T08:25:34.751507 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/aws-sdk-core-2.6.3/lib/seahorse/client/base.rb:207:in `block (2 levels) in define_operation_methods'
+E, [2018-03-01T08:25:34.751517 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/aws-sdk-resources-2.6.3/lib/aws-sdk-resources/request.rb:24:in `call'
+E, [2018-03-01T08:25:34.751527 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/aws-sdk-resources-2.6.3/lib/aws-sdk-resources/operations.rb:41:in `call'
+E, [2018-03-01T08:25:34.751537 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/aws-sdk-resources-2.6.3/lib/aws-sdk-resources/operations.rb:61:in `call'
+E, [2018-03-01T08:25:34.751547 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/aws-sdk-resources-2.6.3/lib/aws-sdk-resources/resource.rb:147:in `load'
+E, [2018-03-01T08:25:34.751557 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/aws-sdk-resources-2.6.3/lib/aws-sdk-resources/resource.rb:120:in `data'
+E, [2018-03-01T08:25:34.751568 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/aws-sdk-resources-2.6.3/lib/aws-sdk-resources/resource.rb:223:in `block in add_data_attribute'
+E, [2018-03-01T08:25:34.751578 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-ec2-1.2.0/lib/kitchen/driver/ec2.rb:541:in `show_chosen_image'
+E, [2018-03-01T08:25:34.751592 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-ec2-1.2.0/lib/kitchen/driver/ec2.rb:249:in `image'
+E, [2018-03-01T08:25:34.751602 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-ec2-1.2.0/lib/kitchen/driver/ec2.rb:275:in `actual_platform'
+E, [2018-03-01T08:25:34.751612 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-ec2-1.2.0/lib/kitchen/driver/ec2.rb:302:in `update_username'
+E, [2018-03-01T08:25:34.751633 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-ec2-1.2.0/lib/kitchen/driver/ec2.rb:170:in `create'
+E, [2018-03-01T08:25:34.751645 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:456:in `public_send'
+E, [2018-03-01T08:25:34.751655 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:456:in `block in perform_action'
+E, [2018-03-01T08:25:34.751665 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:520:in `synchronize_or_call'
+E, [2018-03-01T08:25:34.751675 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:485:in `block in action'
+E, [2018-03-01T08:25:34.751685 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2018-03-01T08:25:34.751699 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:484:in `action'
+E, [2018-03-01T08:25:34.751731 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:456:in `perform_action'
+E, [2018-03-01T08:25:34.751741 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:366:in `create_action'
+E, [2018-03-01T08:25:34.751751 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:355:in `block in transition_to'
+E, [2018-03-01T08:25:34.751761 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `each'
+E, [2018-03-01T08:25:34.751771 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `transition_to'
+E, [2018-03-01T08:25:34.751781 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:160:in `verify'
+E, [2018-03-01T08:25:34.751790 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:189:in `block in test'
+E, [2018-03-01T08:25:34.751839 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2018-03-01T08:25:34.751853 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:185:in `test'
+E, [2018-03-01T08:25:34.751869 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2018-03-01T08:25:34.751880 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2018-03-01T08:25:34.751890 #10064] ERROR -- default-rhel-74: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2018-03-01T08:25:34.751900 #10064] ERROR -- default-rhel-74: ----End Backtrace-----

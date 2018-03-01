@@ -1,6 +1,9 @@
 ---
 driver:
-  name: vagrant
+  name: ec2
+  aws_ssh_key_id: yolo
+  region: us-east-1
+  availability_zone: us-east-1b
 
 provisioner:
   name: chef_zero
@@ -9,7 +12,13 @@ verifier:
   name: inspec
 
 platforms:
-  - name: centos-7.2
+  - name: amazon
+    driver:
+      image_id: ami-26ebbc5c
+    transport:
+        username: ec2-user
+        ssh_key: /opt/yolo.pem
+
 
 suites:
   - name: default

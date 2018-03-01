@@ -1,102 +1,35 @@
-I, [2018-03-01T11:01:53.213352 #16100]  INFO -- default-centos-72: -----> Creating <default-centos-72>...
-I, [2018-03-01T11:01:55.433685 #16100]  INFO -- default-centos-72: Bringing machine 'default' up with 'virtualbox' provider...
-I, [2018-03-01T11:01:56.053256 #16100]  INFO -- default-centos-72: ==> default: Box 'bento/centos-7.2' could not be found. Attempting to find and install...
-I, [2018-03-01T11:01:56.053256 #16100]  INFO -- default-centos-72:     default: Box Provider: virtualbox
-I, [2018-03-01T11:01:56.053757 #16100]  INFO -- default-centos-72:     default: Box Version: >= 0
-I, [2018-03-01T11:01:57.558834 #16100]  INFO -- default-centos-72: The box 'bento/centos-7.2' could not be found or
-I, [2018-03-01T11:01:57.559833 #16100]  INFO -- default-centos-72: could not be accessed in the remote catalog. If this is a private
-I, [2018-03-01T11:01:57.559833 #16100]  INFO -- default-centos-72: box on HashiCorp's Atlas, please verify you're logged in via
-I, [2018-03-01T11:01:57.559833 #16100]  INFO -- default-centos-72: `vagrant login`. Also, please double-check the name. The expanded
-I, [2018-03-01T11:01:57.560333 #16100]  INFO -- default-centos-72: URL and error message are shown below:
-I, [2018-03-01T11:01:57.560333 #16100]  INFO -- default-centos-72: 
-I, [2018-03-01T11:01:57.560834 #16100]  INFO -- default-centos-72: URL: ["https://atlas.hashicorp.com/bento/centos-7.2"]
-I, [2018-03-01T11:01:57.560834 #16100]  INFO -- default-centos-72: Error: The requested URL returned error: 404 Not Found
-E, [2018-03-01T11:01:57.596396 #16100] ERROR -- default-centos-72: Create failed on instance <default-centos-72>.
-E, [2018-03-01T11:01:57.596396 #16100] ERROR -- default-centos-72: ------Exception-------
-E, [2018-03-01T11:01:57.596396 #16100] ERROR -- default-centos-72: Class: Kitchen::ShellOut::ShellCommandFailed
-E, [2018-03-01T11:01:57.596396 #16100] ERROR -- default-centos-72: Message: Expected process to exit with [0], but received '1'
----- Begin output of vagrant up --no-provision --provider virtualbox ----
-STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
-==> default: Box 'bento/centos-7.2' could not be found. Attempting to find and install...
-    default: Box Provider: virtualbox
-    default: Box Version: >= 0
-STDERR: The box 'bento/centos-7.2' could not be found or
-could not be accessed in the remote catalog. If this is a private
-box on HashiCorp's Atlas, please verify you're logged in via
-`vagrant login`. Also, please double-check the name. The expanded
-URL and error message are shown below:
-
-URL: ["https://atlas.hashicorp.com/bento/centos-7.2"]
-Error: The requested URL returned error: 404 Not Found
----- End output of vagrant up --no-provision --provider virtualbox ----
-Ran vagrant up --no-provision --provider virtualbox returned 1
-E, [2018-03-01T11:01:57.597394 #16100] ERROR -- default-centos-72: ----------------------
-E, [2018-03-01T11:01:57.597394 #16100] ERROR -- default-centos-72: ------Backtrace-------
-E, [2018-03-01T11:01:57.597394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/shell_out.rb:71:in `rescue in run_command'
-E, [2018-03-01T11:01:57.597394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/shell_out.rb:59:in `run_command'
-E, [2018-03-01T11:01:57.597394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/kitchen-vagrant-1.2.1/lib/kitchen/driver/vagrant.rb:435:in `run_command'
-E, [2018-03-01T11:01:57.597394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/kitchen-vagrant-1.2.1/lib/kitchen/driver/vagrant.rb:382:in `run'
-E, [2018-03-01T11:01:57.597394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/kitchen-vagrant-1.2.1/lib/kitchen/driver/vagrant.rb:466:in `run_vagrant_up'
-E, [2018-03-01T11:01:57.597394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/kitchen-vagrant-1.2.1/lib/kitchen/driver/vagrant.rb:107:in `create'
-E, [2018-03-01T11:01:57.598396 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:469:in `public_send'
-E, [2018-03-01T11:01:57.598396 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:469:in `block in perform_action'
-E, [2018-03-01T11:01:57.598396 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:533:in `block in synchronize_or_call'
-E, [2018-03-01T11:01:57.598396 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:531:in `synchronize'
-E, [2018-03-01T11:01:57.598396 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:531:in `synchronize_or_call'
-E, [2018-03-01T11:01:57.598396 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:498:in `block in action'
-E, [2018-03-01T11:01:57.598396 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
-E, [2018-03-01T11:01:57.598396 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:497:in `action'
-E, [2018-03-01T11:01:57.599394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:469:in `perform_action'
-E, [2018-03-01T11:01:57.599394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:379:in `create_action'
-E, [2018-03-01T11:01:57.599394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:368:in `block in transition_to'
-E, [2018-03-01T11:01:57.599394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:367:in `each'
-E, [2018-03-01T11:01:57.599394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:367:in `transition_to'
-E, [2018-03-01T11:01:57.599394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:124:in `create'
-E, [2018-03-01T11:01:57.599394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:197:in `public_send'
-E, [2018-03-01T11:01:57.599394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:197:in `run_action_in_thread'
-E, [2018-03-01T11:01:57.599394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
-E, [2018-03-01T11:01:57.599394 #16100] ERROR -- default-centos-72: ----End Backtrace-----
-E, [2018-03-01T11:01:57.600395 #16100] ERROR -- default-centos-72: ---Nested Exception---
-E, [2018-03-01T11:01:57.600395 #16100] ERROR -- default-centos-72: Class: Mixlib::ShellOut::ShellCommandFailed
-E, [2018-03-01T11:01:57.600395 #16100] ERROR -- default-centos-72: Message: Expected process to exit with [0], but received '1'
----- Begin output of vagrant up --no-provision --provider virtualbox ----
-STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
-==> default: Box 'bento/centos-7.2' could not be found. Attempting to find and install...
-    default: Box Provider: virtualbox
-    default: Box Version: >= 0
-STDERR: The box 'bento/centos-7.2' could not be found or
-could not be accessed in the remote catalog. If this is a private
-box on HashiCorp's Atlas, please verify you're logged in via
-`vagrant login`. Also, please double-check the name. The expanded
-URL and error message are shown below:
-
-URL: ["https://atlas.hashicorp.com/bento/centos-7.2"]
-Error: The requested URL returned error: 404 Not Found
----- End output of vagrant up --no-provision --provider virtualbox ----
-Ran vagrant up --no-provision --provider virtualbox returned 1
-E, [2018-03-01T11:01:57.600395 #16100] ERROR -- default-centos-72: ----------------------
-E, [2018-03-01T11:01:57.600395 #16100] ERROR -- default-centos-72: ------Backtrace-------
-E, [2018-03-01T11:01:57.600395 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/shell_out.rb:71:in `rescue in run_command'
-E, [2018-03-01T11:01:57.600395 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/shell_out.rb:59:in `run_command'
-E, [2018-03-01T11:01:57.600395 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/kitchen-vagrant-1.2.1/lib/kitchen/driver/vagrant.rb:435:in `run_command'
-E, [2018-03-01T11:01:57.600395 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/kitchen-vagrant-1.2.1/lib/kitchen/driver/vagrant.rb:382:in `run'
-E, [2018-03-01T11:01:57.600395 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/kitchen-vagrant-1.2.1/lib/kitchen/driver/vagrant.rb:466:in `run_vagrant_up'
-E, [2018-03-01T11:01:57.600395 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/kitchen-vagrant-1.2.1/lib/kitchen/driver/vagrant.rb:107:in `create'
-E, [2018-03-01T11:01:57.601394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:469:in `public_send'
-E, [2018-03-01T11:01:57.601394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:469:in `block in perform_action'
-E, [2018-03-01T11:01:57.601394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:533:in `block in synchronize_or_call'
-E, [2018-03-01T11:01:57.601394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:531:in `synchronize'
-E, [2018-03-01T11:01:57.601394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:531:in `synchronize_or_call'
-E, [2018-03-01T11:01:57.601394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:498:in `block in action'
-E, [2018-03-01T11:01:57.601394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
-E, [2018-03-01T11:01:57.601394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:497:in `action'
-E, [2018-03-01T11:01:57.601394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:469:in `perform_action'
-E, [2018-03-01T11:01:57.601394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:379:in `create_action'
-E, [2018-03-01T11:01:57.601394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:368:in `block in transition_to'
-E, [2018-03-01T11:01:57.601394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:367:in `each'
-E, [2018-03-01T11:01:57.601394 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:367:in `transition_to'
-E, [2018-03-01T11:01:57.602393 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:124:in `create'
-E, [2018-03-01T11:01:57.602393 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:197:in `public_send'
-E, [2018-03-01T11:01:57.602393 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:197:in `run_action_in_thread'
-E, [2018-03-01T11:01:57.602393 #16100] ERROR -- default-centos-72: D:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
-E, [2018-03-01T11:01:57.602393 #16100] ERROR -- default-centos-72: ----End Backtrace-----
+I, [2018-03-01T08:22:35.915665 #10037]  INFO -- default-centos-72: -----> Cleaning up any prior instances of <default-centos-72>
+I, [2018-03-01T08:22:35.916001 #10037]  INFO -- default-centos-72: -----> Destroying <default-centos-72>...
+I, [2018-03-01T08:22:35.917554 #10037]  INFO -- default-centos-72: Finished destroying <default-centos-72> (0m0.00s).
+I, [2018-03-01T08:22:35.918145 #10037]  INFO -- default-centos-72: -----> Testing <default-centos-72>
+I, [2018-03-01T08:22:35.918225 #10037]  INFO -- default-centos-72: -----> Creating <default-centos-72>...
+E, [2018-03-01T08:22:39.346557 #10037] ERROR -- default-centos-72: Search returned 0 images.
+E, [2018-03-01T08:22:39.346690 #10037] ERROR -- default-centos-72: Create failed on instance <default-centos-72>.
+E, [2018-03-01T08:22:39.346789 #10037] ERROR -- default-centos-72: ------Exception-------
+E, [2018-03-01T08:22:39.346833 #10037] ERROR -- default-centos-72: Class: RuntimeError
+E, [2018-03-01T08:22:39.346848 #10037] ERROR -- default-centos-72: Message: Neither image_id nor an image_search specified for instance default-centos-72! Please specify one or the other.
+E, [2018-03-01T08:22:39.346858 #10037] ERROR -- default-centos-72: ----------------------
+E, [2018-03-01T08:22:39.346868 #10037] ERROR -- default-centos-72: ------Backtrace-------
+E, [2018-03-01T08:22:39.346877 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-ec2-1.2.0/lib/kitchen/driver/ec2.rb:252:in `image'
+E, [2018-03-01T08:22:39.346886 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-ec2-1.2.0/lib/kitchen/driver/ec2.rb:275:in `actual_platform'
+E, [2018-03-01T08:22:39.346896 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-ec2-1.2.0/lib/kitchen/driver/ec2.rb:302:in `update_username'
+E, [2018-03-01T08:22:39.346906 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-ec2-1.2.0/lib/kitchen/driver/ec2.rb:170:in `create'
+E, [2018-03-01T08:22:39.346916 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:456:in `public_send'
+E, [2018-03-01T08:22:39.346925 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:456:in `block in perform_action'
+E, [2018-03-01T08:22:39.346935 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:520:in `synchronize_or_call'
+E, [2018-03-01T08:22:39.346950 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:485:in `block in action'
+E, [2018-03-01T08:22:39.346961 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2018-03-01T08:22:39.346971 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:484:in `action'
+E, [2018-03-01T08:22:39.346994 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:456:in `perform_action'
+E, [2018-03-01T08:22:39.347005 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:366:in `create_action'
+E, [2018-03-01T08:22:39.347015 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:355:in `block in transition_to'
+E, [2018-03-01T08:22:39.347024 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `each'
+E, [2018-03-01T08:22:39.347034 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `transition_to'
+E, [2018-03-01T08:22:39.347044 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:160:in `verify'
+E, [2018-03-01T08:22:39.347065 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:189:in `block in test'
+E, [2018-03-01T08:22:39.347080 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2018-03-01T08:22:39.347090 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:185:in `test'
+E, [2018-03-01T08:22:39.347099 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2018-03-01T08:22:39.347109 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2018-03-01T08:22:39.347118 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2018-03-01T08:22:39.347128 #10037] ERROR -- default-centos-72: ----End Backtrace-----

@@ -1,0 +1,23 @@
+I, [2018-03-01T10:04:33.061500 #12980]  INFO -- default-amazon: -----> Verifying <default-amazon>...
+I, [2018-03-01T10:04:35.933605 #12980]  INFO -- default-amazon: Use `/opt/Chef/cookbooks/apache/test/recipes/default` for testing
+E, [2018-03-01T10:04:36.527718 #12980] ERROR -- default-amazon: Verify failed on instance <default-amazon>.
+E, [2018-03-01T10:04:36.527824 #12980] ERROR -- default-amazon: ------Exception-------
+E, [2018-03-01T10:04:36.527852 #12980] ERROR -- default-amazon: Class: Kitchen::ActionFailed
+E, [2018-03-01T10:04:36.527868 #12980] ERROR -- default-amazon: Message: Inspec Runner returns 1
+E, [2018-03-01T10:04:36.527880 #12980] ERROR -- default-amazon: ----------------------
+E, [2018-03-01T10:04:36.527896 #12980] ERROR -- default-amazon: ------Backtrace-------
+E, [2018-03-01T10:04:36.527906 #12980] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-inspec-0.15.2/lib/kitchen/verifier/inspec.rb:77:in `call'
+E, [2018-03-01T10:04:36.527917 #12980] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:430:in `block in verify_action'
+E, [2018-03-01T10:04:36.527929 #12980] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:520:in `synchronize_or_call'
+E, [2018-03-01T10:04:36.527943 #12980] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:485:in `block in action'
+E, [2018-03-01T10:04:36.527954 #12980] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2018-03-01T10:04:36.527968 #12980] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:484:in `action'
+E, [2018-03-01T10:04:36.527979 #12980] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:422:in `verify_action'
+E, [2018-03-01T10:04:36.527991 #12980] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:355:in `block in transition_to'
+E, [2018-03-01T10:04:36.528006 #12980] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `each'
+E, [2018-03-01T10:04:36.528017 #12980] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `transition_to'
+E, [2018-03-01T10:04:36.528028 #12980] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:160:in `verify'
+E, [2018-03-01T10:04:36.528038 #12980] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2018-03-01T10:04:36.528049 #12980] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2018-03-01T10:04:36.528063 #12980] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2018-03-01T10:04:36.528077 #12980] ERROR -- default-amazon: ----End Backtrace-----
