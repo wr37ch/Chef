@@ -1,0 +1,35 @@
+I, [2018-03-01T08:22:35.915665 #10037]  INFO -- default-centos-72: -----> Cleaning up any prior instances of <default-centos-72>
+I, [2018-03-01T08:22:35.916001 #10037]  INFO -- default-centos-72: -----> Destroying <default-centos-72>...
+I, [2018-03-01T08:22:35.917554 #10037]  INFO -- default-centos-72: Finished destroying <default-centos-72> (0m0.00s).
+I, [2018-03-01T08:22:35.918145 #10037]  INFO -- default-centos-72: -----> Testing <default-centos-72>
+I, [2018-03-01T08:22:35.918225 #10037]  INFO -- default-centos-72: -----> Creating <default-centos-72>...
+E, [2018-03-01T08:22:39.346557 #10037] ERROR -- default-centos-72: Search returned 0 images.
+E, [2018-03-01T08:22:39.346690 #10037] ERROR -- default-centos-72: Create failed on instance <default-centos-72>.
+E, [2018-03-01T08:22:39.346789 #10037] ERROR -- default-centos-72: ------Exception-------
+E, [2018-03-01T08:22:39.346833 #10037] ERROR -- default-centos-72: Class: RuntimeError
+E, [2018-03-01T08:22:39.346848 #10037] ERROR -- default-centos-72: Message: Neither image_id nor an image_search specified for instance default-centos-72! Please specify one or the other.
+E, [2018-03-01T08:22:39.346858 #10037] ERROR -- default-centos-72: ----------------------
+E, [2018-03-01T08:22:39.346868 #10037] ERROR -- default-centos-72: ------Backtrace-------
+E, [2018-03-01T08:22:39.346877 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-ec2-1.2.0/lib/kitchen/driver/ec2.rb:252:in `image'
+E, [2018-03-01T08:22:39.346886 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-ec2-1.2.0/lib/kitchen/driver/ec2.rb:275:in `actual_platform'
+E, [2018-03-01T08:22:39.346896 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-ec2-1.2.0/lib/kitchen/driver/ec2.rb:302:in `update_username'
+E, [2018-03-01T08:22:39.346906 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-ec2-1.2.0/lib/kitchen/driver/ec2.rb:170:in `create'
+E, [2018-03-01T08:22:39.346916 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:456:in `public_send'
+E, [2018-03-01T08:22:39.346925 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:456:in `block in perform_action'
+E, [2018-03-01T08:22:39.346935 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:520:in `synchronize_or_call'
+E, [2018-03-01T08:22:39.346950 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:485:in `block in action'
+E, [2018-03-01T08:22:39.346961 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2018-03-01T08:22:39.346971 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:484:in `action'
+E, [2018-03-01T08:22:39.346994 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:456:in `perform_action'
+E, [2018-03-01T08:22:39.347005 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:366:in `create_action'
+E, [2018-03-01T08:22:39.347015 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:355:in `block in transition_to'
+E, [2018-03-01T08:22:39.347024 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `each'
+E, [2018-03-01T08:22:39.347034 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `transition_to'
+E, [2018-03-01T08:22:39.347044 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:160:in `verify'
+E, [2018-03-01T08:22:39.347065 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:189:in `block in test'
+E, [2018-03-01T08:22:39.347080 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2018-03-01T08:22:39.347090 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:185:in `test'
+E, [2018-03-01T08:22:39.347099 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2018-03-01T08:22:39.347109 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2018-03-01T08:22:39.347118 #10037] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2018-03-01T08:22:39.347128 #10037] ERROR -- default-centos-72: ----End Backtrace-----
